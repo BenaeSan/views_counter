@@ -14,7 +14,7 @@ if (!elgg_instanceof($entity) || !is_views_counter_enabled($entity)) {
 }
 
 $full_view = elgg_extract('full_view', $vars);
-$full_view_ignore = elgg_extract('views_counter_full_view_override');
+$full_view_ignore = elgg_extract('views_counter_full_view_override', $vars);
 
 if (!$full_view && !$full_view_ignore) {
 	return;
